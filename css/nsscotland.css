@@ -152,6 +152,18 @@ body {
   border: 0;
 }
 
+#newsletter button{
+  width: 80px;
+  padding: 5px;
+  font-size: 1em;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 0;
+  color: #f8f8f8;
+  background: rgba(4, 30, 72, 0.5);
+}
+
 #navigation{
   text-align:right;
   margin-bottom: 0.5em;
