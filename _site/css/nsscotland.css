@@ -200,12 +200,12 @@ h2{
 }
 
 .speaker img{
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
 }
 
 .speaker .info{
-  margin-top: 60px;
+  margin-top: 20px;
   float: left;
   margin-left: 25px;
 }
@@ -289,7 +289,7 @@ rotated boxes, inspired from http://nicolasgallagher.com/css-drop-shadows-withou
 .drop-shadow {
   position:relative;
   float:left;
-  width:200px%;
+  width:100px%;
   padding:1em;
   margin:2em 10px 2em;
   background:#fff;
@@ -354,9 +354,9 @@ rotated boxes, inspired from http://nicolasgallagher.com/css-drop-shadows-withou
 .lifted:after {
   bottom:15px;
   left:10px;
-  width:200px;
+  width:100px;
   height:20%;
-  max-width:200px;
+  max-width:100px;
   -webkit-box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
   -moz-box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
   box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
@@ -443,7 +443,7 @@ px      68    160    252    */
   }
 
   .speaker .info{
-    margin-top: 20px;
+    margin-top: 5px;
   }
 
   .speaker:nth-child(even) .info, .speaker{
@@ -459,7 +459,7 @@ px      68    160    252    */
     transform:rotate(0deg);
     float: none;
     display: block;
-    width: 200px;
+    width: 100px;
     margin: 0 auto;
     text-align: center;
     position: relative;
