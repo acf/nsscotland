@@ -1,4 +1,95 @@
-body{
+/*  Less Framework 4
+  http://lessframework.com
+  by Joni Korpi
+  License: http://creativecommons.org/licenses/MIT/  */
+
+
+/*  Resets
+  ------  */
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em,
+img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figure, figcaption, hgroup,
+menu, footer, header, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+article, aside, canvas, figure, figure img, figcaption, hgroup,
+footer, header, nav, section, audio, video {
+  display: block;
+}
+
+a img {border: 0;}
+
+
+
+/*  Typography presets
+  ------------------  */
+
+.gigantic {
+  font-size: 110px;
+  line-height: 120px;
+  letter-spacing: -2px;
+}
+
+.huge, h1 {
+  font-size: 68px;
+  line-height: 72px;
+  letter-spacing: -1px;
+}
+
+.large, h2 {
+  font-size: 42px;
+  line-height: 48px;
+}
+
+.bigger, h3 {
+  font-size: 26px;
+  line-height: 36px;
+}
+
+.big, h4 {
+  font-size: 22px;
+  line-height: 30px;
+}
+
+body {
+  font: 16px/24px Georgia, serif;
+}
+
+.small, small {
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* Selection colours (easy to forget) */
+
+::selection      {background: rgb(255,255,158);}
+::-moz-selection   {background: rgb(255,255,158);}
+img::selection     {background: transparent;}
+img::-moz-selection  {background: transparent;}
+body {-webkit-tap-highlight-color: rgb(255,255,158);}
+
+
+
+/*    Default Layout: 992px.
+    Gutters: 24px.
+    Outer margins: 48px.
+    Leftover space for scrollbars @1024px: 32px.
+-------------------------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8      9      10
+px      68    160    252    344    436    528    620    712    804    896    */
+
+body {
+  width: 896px;
+  padding: 72px 48px 84px;
+  -webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
+
   background: #041E48;
   color: #fff;
   font-family: "Helvetica Neue", Arial, serif;
@@ -36,7 +127,7 @@ body{
 }
 
 #content{
-  background-color: rgba(255,255,255, 0.6);
+  background-color: rgba(255,255,255, 0.7);
   padding: 10px;
   -webkit-box-shadow:0px 0px 4px rgba(0, 0, 0, 0.7) inset;
   -moz-box-shadow:0px 0px 4px rgba(0, 0, 0, 0.7) inset;
@@ -48,9 +139,19 @@ body{
 
 #content p{
   padding: 10px;
+  color: #041E48;
+}
+
+#content p a{
+  color: #222;
+}
+
+#content p a:hover{
+  color: #000;
 }
 
 ul li, ol li{
+  color: #000;
   margin-left: 40px;
   padding-left: 0px;
 }
@@ -67,6 +168,11 @@ h2{
   height: 0;
   clear: both;
   visibility: hidden;
+}
+
+#header #logo{
+  width: 256px;
+  height: 256px;
 }
 
 #header #conference_date{
@@ -103,9 +209,6 @@ h2{
   float: left;
   margin-left: 25px;
 }
-
-
-
 
 .speaker .info h3{
   font-size: 3em;
@@ -272,4 +375,93 @@ rotated boxes, inspired from http://nicolasgallagher.com/css-drop-shadows-withou
   -ms-transform:rotate(3deg);
   -o-transform:rotate(3deg);
   transform:rotate(3deg);
+}
+
+
+/*    Tablet Layout: 768px.
+    Gutters: 24px.
+    Outer margins: 28px.
+    Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+  body {
+    width: 712px;
+    padding: 48px 28px 60px;
+  }
+
+  #header{
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+
+  #header img{
+    float: left;
+    margin-right: 30px;
+  }
+}
+
+
+
+/*    Mobile Layout: 320px.
+    Gutters: 24px.
+    Outer margins: 34px.
+    Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+
+@media only screen and (max-width: 767px) {
+
+  body {
+    width: 436px;
+    padding: 36px 22px 48px;
+  }
+
+  #header{
+    margin-left: 0px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  #header #logo{
+    float:none;
+    margin: 0 auto;
+    width: 128px;
+    height: 128px;
+  }
+
+  #header h1{
+    padding-top: 0;
+  }
+
+  #navigation{
+    text-align: center;
+  }
+
+  .speaker .info{
+    margin-top: 20px;
+  }
+
+  .speaker:nth-child(even) .info, .speaker{
+    text-align: center;
+    float: none;
+  }
+
+  .speaker:nth-child(even) .rotated, .rotated {
+    -webkit-transform:rotate(0deg);
+    -moz-transform:rotate(0deg);
+    -ms-transform:rotate(0deg);
+    -o-transform:rotate(0deg);
+    transform:rotate(0deg);
+    float: none;
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+  }
 }
