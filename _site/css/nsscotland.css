@@ -310,6 +310,13 @@ table td.interval{
   color: #aaa;
 }
 
+table td.interval a{
+  color: #999;
+}
+
+table td.interval a:hover{
+  color: #666;
+}
 
 #footer{
   margin-top: 0.5em;
