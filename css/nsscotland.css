@@ -99,7 +99,7 @@ body {
 
 #header{
   margin-left: 80px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 #header img{
@@ -110,6 +110,46 @@ body {
 #header h1{
   padding-top: 60px;
   text-shadow: 0px 2px 3px #222;
+}
+
+#newsletter{
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #041E48;
+  margin-top: 30px;
+  display: inline-block;
+  width: 365px;
+  background-color: rgba(255,255,255, 0.3);
+  padding: 10px;
+  -webkit-box-shadow:0px 0px 4px rgba(0, 0, 0, 0.7) inset;
+  -moz-box-shadow:0px 0px 4px rgba(0, 0, 0, 0.7) inset;
+  box-shadow::0px 0px 4px rgba(0, 0, 0, 0.7) inset;
+  -webkit-border-top-left-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+#newsletter form{
+  padding: 0 5px;
+}
+
+#newsletter label{
+  font-weight: bold;
+}
+
+#newsletter input{
+  padding: 5px 5px;
+  margin-top: 5px;
+  width: 250px;
+  font-size: 1em;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 0;
 }
 
 #navigation{
@@ -189,7 +229,7 @@ h2{
 
 .speaker{
   clear:both;
-  padding: 10px;
+  padding: 0 10px;
 /*  padding-bottom: 5px;*/
   border-bottom: 1px dotted rgba(255,255,255, 0.6);
 /*  border: 1px solid white;*/
@@ -205,17 +245,20 @@ h2{
 }
 
 .speaker .info{
-  margin-top: 20px;
+  margin-top: 50px;
   float: left;
   margin-left: 25px;
+  line-height: 2em;
+  color: #20314B;
+  font-size: 1.5em;
 }
 
 .speaker .info h3{
-  font-size: 3em;
+  font-size: 2em;
+  color: #f8f8f8;
 }
 
 .speaker .info a{
-  line-height: 2em;
   color: #20314B;
 }
 
@@ -390,18 +433,18 @@ px      68    160    252    344    436    528    620    712    */
 
   body {
     width: 712px;
-    padding: 48px 28px 60px;
+    padding: 72px 28px 48px;
   }
 
   #header{
     margin-left: 20px;
-    margin-bottom: 10px;
   }
 
   #header img{
     float: left;
     margin-right: 30px;
   }
+  
 }
 
 
@@ -423,7 +466,7 @@ px      68    160    252    */
 
   #header{
     margin-left: 0px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     text-align: center;
   }
 
@@ -436,6 +479,16 @@ px      68    160    252    */
 
   #header h1{
     padding-top: 0;
+  }
+
+  #newsletter{
+    position: relative;
+    top: auto;
+    left: 25px;
+    margin-bottom: 20px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
   }
 
   #navigation{
