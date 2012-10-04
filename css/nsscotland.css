@@ -279,6 +279,26 @@ h2{
   color: #20314B;
 }
 
+.speaker .abstract, .speaker .biography{
+  width: 600px;
+  font-size   : 0.6em;
+  line-height : 1.2em;
+}
+
+.speaker .abstract{
+  font-size: 0.8em;
+}
+
+.speaker .biography{
+  font-size: 0.6em;
+  margin-bottom: 10px;
+}
+
+.speaker .abstract h4, .speaker .biography h4{
+  /*margin: 0 10px;*/
+    color: #114;
+}
+
 .speaker:nth-child(even) .image{
   float:right;
 }
@@ -468,7 +488,7 @@ px      68    160    252    344    436    528    620    712    */
     float: left;
     margin-right: 30px;
   }
-  
+
 }
 
 
@@ -521,6 +541,10 @@ px      68    160    252    */
 
   .speaker .info{
     margin-top: 5px;
+  }
+
+  .speaker .abstract, .speaker .biography{
+    width: auto;
   }
 
   .speaker:nth-child(even) .info, .speaker{
