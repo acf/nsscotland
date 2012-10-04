@@ -543,6 +543,10 @@ px      68    160    252    */
     margin-top: 5px;
   }
 
+  .speaker .abstract, .speaker .biography{
+    width: auto;
+  }
+
   .speaker:nth-child(even) .info, .speaker{
     text-align: center;
     float: none;
