@@ -1,0 +1,57 @@
+html body {
+  font-family: "proxima-nova";
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "proxima-nova";
+}
+
+/*--------------------------*/
+/* TOP NAVIGATION
+/*--------------------------*/
+#primary-navigation  {
+margin-top:2em;
+}
+#primary-navigation h1 {
+  background:url("/images/2013/nsscotland-logo.png") top left no-repeat;
+  height: 124px;
+  width: 136px;
+  text-indent:-9999px;
+  margin:0 auto;
+  position:relative;
+}
+#primary-navigation nav {
+  float:left;
+  background:#EAEAEA;
+  width:100%;
+  margin-top:-5em;
+  padding:0;
+  box-shadow: 0px 1px 4px 0px #656565;
+  border-radius:4px;
+  background: #ffffff; /* Old browsers */
+  background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* IE10+ */
+  background: linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+}
+
+#primary-navigation li{
+  list-style:none;
+  margin:0;
+  padding-top:0.5em;
+  padding-bottom:0.5em;
+  text-align:center;
+}
+#primary-navigation li a {
+  font-family: 'Lucida Grande', Helvetica, Verdana, sans-serif;
+  color:#454545;
+  font-size:13px;
+  line-height:25px;
+  text-shadow: rgb(255, 255, 255) 0px 1px 0px;
+  text-decoration:none;
+  font-weight:bold;
+}
+/*--------------------------*/
