@@ -1,9 +1,44 @@
 html body {
   font-family: "proxima-nova";
+  color:242424;
+}
+
+a, a:visited {
+  color:#63b4e4;
+  text-decoration:underline;
+}
+a:hover {
+  color:#0c4671;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "proxima-nova";
+  font-style: normal;
+  font-weight: 300;
+}
+h2 {
+  font-size:2em;
+}
+
+/*--------------------------*/
+/* header with divider
+/*--------------------------*/
+h2.with-divider {
+  background:url("/images/2013/divider.png") 0.5em center no-repeat;
+  text-align:center;
+}
+h2.with-divider span{
+  background:#FFFFFF;
+  padding:0 0.7em;
+  box-shadow:0px 0px 5px 4px #FFFFFF;
+}
+/*--------------------------*/
+/* straptext
+/*--------------------------*/
+.strap-text p {
+  font-size:1.3em;
+  line-height:1.5em;
+  font-weight:300;
 }
 
 /*--------------------------*/
@@ -19,6 +54,7 @@ margin-top:2em;
   text-indent:-9999px;
   margin:0 auto;
   position:relative;
+  z-index:10;
 }
 #primary-navigation nav {
   float:left;
@@ -41,10 +77,18 @@ margin-top:2em;
 #primary-navigation li{
   list-style:none;
   margin:0;
-  padding-top:0.5em;
-  padding-bottom:0.5em;
+  padding:0;
   text-align:center;
+  border-right:solid 1px #FFFFFF;
+  border-left:solid 1px #E5E5E5;
 }
+#primary-navigation ul li:last-child{
+  border-right:none;
+}
+#primary-navigation ul li:first-child{
+  border-left:none;
+}
+
 #primary-navigation li a {
   font-family: 'Lucida Grande', Helvetica, Verdana, sans-serif;
   color:#454545;
@@ -53,5 +97,26 @@ margin-top:2em;
   text-shadow: rgb(255, 255, 255) 0px 1px 0px;
   text-decoration:none;
   font-weight:bold;
+  display:block;
+  padding-top:0.7em;
+  padding-bottom:0.7em;
+  width:100%;
+}
+#primary-navigation li a:hover {
+  background: #d4d4d4; /* Old browsers */
+  background: -moz-linear-gradient(top, #ffffff 0%, #d4d4d4 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#d4d4d4)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #ffffff 0%,#d4d4d4 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #ffffff 0%,#d4d4d4 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #ffffff 0%,#d4d4d4 100%); /* IE10+ */
+  background: linear-gradient(to bottom, #ffffff 0%,#d4d4d4 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d4d4d4',GradientType=0 ); /* IE6-9 */
 }
 /*--------------------------*/
+/* FOOTER
+/*--------------------------*/
+#footer {
+  background:#EFEFEF;
+  border-top:solid 1px #D6D6D6;
+  min-height:200px;
+}
