@@ -32,6 +32,7 @@ h4 {
   font-weight:bold;
 }
 
+
 /*--------------------------*/
 /* header with divider
 /*--------------------------*/
@@ -120,6 +121,23 @@ div.last-speaker {
 }
 .speaker p {
   font-size:0.9em;
+}
+.biography {
+  border-radius:5px;
+  position:absolute;
+}
+.biography img{
+  float:left;
+}
+.biography p,
+.biography h3,
+.biography h4 {
+  margin-left:200px;
+  text-align:left;
+}
+.reveal-modal {
+  position:fixed;
+  top:30%!important;
 }
 
 /*--------------------------*/

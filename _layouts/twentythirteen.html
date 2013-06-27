@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/css/foundation/foundation.css" />
+    <link rel="stylesheet" href="/css/foundation/foundation.min.css" />
     <link rel="stylesheet" href="/css/nsscotland-2013.css" />
     <script src="/js/vendor/custom.modernizr.js"></script>
     <script type="text/javascript" src="//use.typekit.net/imm5mhg.js"></script>
@@ -60,6 +60,19 @@
   </div>
   </div>
 <!-- /FOOTER -->
+<script>
+  document.write('<script src=' +
+  ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
+  '.js><\/script>')
+  </script>
+
+  <script src="js/foundation.min.js"></script>
+<script>
+  $(document).foundation();
+$(document).foundation('section', {deep_linking: true}, function (response) {
+  console.log(response.errors);
+});
+</script>
 
   </body>
 </html>
