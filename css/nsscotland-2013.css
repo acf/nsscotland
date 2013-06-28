@@ -45,6 +45,15 @@ h2.with-divider span{
   padding:0 0.7em;
   box-shadow:0px 0px 5px 4px #FFFFFF;
 }
+@media only screen and (max-width: 768px) {
+  h2.with-divider {
+    background:none;
+    text-align:left;
+  }
+  h2.with-divider span{
+    padding:0 ;
+  }
+}
 
 /*--------------------------*/
 /* buy-now
@@ -63,13 +72,14 @@ h2.with-divider span{
   text-align:center;
 }
 a.button { 
-  font-size:1.2em;
+  font-size:1.6em;
+  line-height:1.5em;
+  font-weight:800;
   text-decoration:none;
   color: #FFFFFF; 
-  width:18em;
   text-shadow: 0 -1px 0 rgba(0,0,0,.5); 
   display: inline-block; 
-  padding: 6px 16px 4px; 
+  padding: 6px 28px 4px; 
   border: 1px solid #3A5615; 
   -webkit-border-radius: 4px; 
   -moz-border-radius: 4px; 
@@ -88,6 +98,13 @@ a.button {
   line-height:1.5em;
   font-weight:300;
   text-align:center;
+}
+@media only screen and (max-width: 768px) {
+  .strap-text p {
+    text-align:left;
+    font-size:1.1em;
+    line-height:1.3em;
+  }
 }
 
 /*--------------------------*/
@@ -128,6 +145,7 @@ div.last-speaker {
 }
 .biography img{
   float:left;
+  margin-right:1em;
 }
 .biography p,
 .biography h3,
@@ -138,6 +156,16 @@ div.last-speaker {
 .reveal-modal {
   position:fixed;
   top:30%!important;
+}
+@media only screen and (max-width: 768px) {
+  .speaker img {
+    display:none; 
+  }
+  .biography p,
+  .biography h3,
+  .biography h4 {
+    margin-left:0;
+  }
 }
 
 /*--------------------------*/
@@ -171,6 +199,8 @@ div.last-speaker {
   top:-7.2em;
 }
 #primary-navigation nav {
+  position:relative;
+  z-index:2;
   float:left;
   background:#EAEAEA;
   width:100%;
@@ -226,6 +256,24 @@ div.last-speaker {
   background: linear-gradient(to bottom, #ffffff 0%,#d4d4d4 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d4d4d4',GradientType=0 ); /* IE6-9 */
 }
+@media only screen and (max-width: 768px) {
+  #primary-navigation h2 {
+    color:#999999;
+    position:static;
+    font-size:0.9em;
+    text-align:center;
+  }
+  #primary-navigation nav {
+    margin-top:0em;
+    margin-bottom:1em;
+  } 
+  #primary-navigation nav li{
+    border-bottom:solid 1px #CCCCCC;
+  }
+
+}
+
+
 /*--------------------------*/
 /* TUTORIALS
 /*--------------------------*/
@@ -243,6 +291,14 @@ div.last-speaker {
 .tutorials p img {
   float:left;
   margin:1em 1em 1em 0;
+}
+@media only screen and (max-width: 768px) {
+  .tutorials-detail #ios-tutorial {
+    padding-right:1em;
+  }
+  .tutorials-detail #rails-tutorial {
+    padding-left:1em;
+  }
 }
 /*--------------------------*/
 /* MAP
@@ -293,7 +349,6 @@ div.last-speaker {
 /* FOOTER
 /*--------------------------*/
 #footer {
-  background:#EFEFEF;
   border-top:solid 1px #D6D6D6;
   padding:2em 0;
 }
