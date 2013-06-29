@@ -50,11 +50,13 @@
   <div class="row">
     <div class="large-12 columns buy-now">
       <a href="http://nsscotland.eventbrite.co.uk/" class="button">Tickets available from only &pound;199</a>
+      <!--
       <div id="countdown">
       <script type="application/javascript">
       var myCountdown2 = new Countdown({time: 10281600, width:280, height:55, rangeHi:"month", style:"flip"});
       </script>
       </div>
+      -->
     </div>
   </div>
   </div>
@@ -68,7 +70,9 @@
     </div>
     <div class="large-8  columns" id="organized">
       <p id="twitter">Twitter: <a href="https://twitter.com/nsscotland">@nsscotland</a></p>
-      <p>Organised by <a href="#"data-reveal-id="organisers">Alan Francis &amp; Paul Wilson</a>.</p>
+      <p>Organised by <a href="#" data-reveal-id="organisers-alan">Alan Francis</a> 
+      &amp; 
+      <a href="#" data-reveal-id="organisers-paul">Paul Wilson</a>.</p>
       <p>Photo Credit: <a href="http://www.flickr.com/photos/pipsroadster/5898567832/">PhillMcIntosh</a>.</p>
 
     </div>
@@ -79,9 +83,8 @@
 <!-- /FOOTER -->
 
 <div class="row" >
-  <div id="organisers" class="reveal-modal medium">
-    <h2>NSScotland is organised by:</h2>
-    <div class="organiser first">
+  <div id="organisers-alan" class="organiser-modal reveal-modal medium">
+    <div class="organiser">
       <img src="/images/2013/speakers/alan_francis.jpg" />
       <h3>Alan C. Francis</h3>
       <p>In 20 years, Alan’s done a lot of different things in Software. He’s built control systems for dams 
@@ -89,6 +92,11 @@
           System Monitoring software on Linux in Ruby, and these days merchant tools for iOS in Objective C. 
           In between he’s been an Agile process consultant for ObjectMentor and ThoughtWorks, and co-organises the Scottish Ruby Conference.</p>
     </div>
+    <a class="close-reveal-modal">&#215;</a>
+  </div>
+</div>
+<div class="row" >
+  <div id="organisers-paul" class="organiser-modal reveal-modal medium">
     <div class="organiser">
       <img src="/images/2013/speakers/paul_wilson.jpg" />
       <h3>Paul Wilson</h3>
@@ -106,9 +114,6 @@
   <script src="js/foundation.min.js"></script>
 <script>
   $(document).foundation();
-$(document).foundation('section', {deep_linking: true}, function (response) {
-  console.log(response.errors);
-});
 </script>
 
   </body>
