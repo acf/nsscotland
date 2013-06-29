@@ -94,6 +94,9 @@ a.button {
   background-clip: padding-box; 
   -webkit-box-shadow: 0 2px 3px rgba(0,0,0,.2), inset 0 0 1px rgba(255,255,255,.4), inset 0 1px 0 rgba(255,255,255,.5); -moz-box-shadow: 0 2px 3px rgba(0,0,0,.2), inset 0 0 1px rgba(255,255,255,.4), inset 0 1px 0 rgba(255,255,255,.5); box-shadow: 0 2px 3px rgba(0,0,0,.2), inset 0 0 1px rgba(255,255,255,.4), inset 0 1px 0 rgba(255,255,255,.5);
 }
+a.button:hover {
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgb(105,169,39)), color-stop(0.5, rgb(135,189,48)), color-stop(0.5, rgb(150,199,72)), color-stop(1, rgb(169,212,95))); background-image: -moz-linear-gradient(center bottom, rgb(105,169,39) 0%, rgb(135,189,48) 50%, rgb(150,199,72) 50%, rgb(169,212,95) 100%); -webkit-background-clip: padding-box; 
+}
 /*--------------------------*/
 /* straptext
 /*--------------------------*/
@@ -317,6 +320,22 @@ div.last-speaker {
   background: -ms-linear-gradient(top, #ffffff 0%,#d4d4d4 100%); /* IE10+ */
   background: linear-gradient(to bottom, #ffffff 0%,#d4d4d4 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d4d4d4',GradientType=0 ); /* IE6-9 */
+}
+#primary-navigation li.buy-tickets {
+  text-decoration:none;
+  color: #FFFFFF; 
+  display: inline-block; 
+  background-color: #5f9614; 
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgb(95,149,19)), color-stop(0.5, rgb(115,169,28)), color-stop(0.5, rgb(130,179,52)), color-stop(1, rgb(149,192,75))); background-image: -moz-linear-gradient(center bottom, rgb(95,149,19) 0%, rgb(115,169,28) 50%, rgb(130,179,52) 50%, rgb(149,192,75) 100%); -webkit-background-clip: padding-box; 
+  -moz-background-clip: padding-box; 
+  background-clip: padding-box; 
+}
+#primary-navigation li.buy-tickets a {
+  color:#FFFFFF;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.5); 
+}
+#primary-navigation li.buy-tickets a:hover {
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgb(105,169,39)), color-stop(0.5, rgb(135,189,48)), color-stop(0.5, rgb(150,199,72)), color-stop(1, rgb(169,212,95))); background-image: -moz-linear-gradient(center bottom, rgb(105,169,39) 0%, rgb(135,189,48) 50%, rgb(150,199,72) 50%, rgb(169,212,95) 100%); -webkit-background-clip: padding-box; 
 }
 @media only screen and (max-width: 768px) {
   #primary-navigation h2 {
