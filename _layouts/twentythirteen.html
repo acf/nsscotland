@@ -7,7 +7,12 @@
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="/css/foundation/foundation.min.css" />
     <link rel="stylesheet" href="/css/nsscotland-2013.css" />
+    <link rel="stylesheet" href="css/nsscotland-2013-retina.css" 
+                           media="only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2)" />
+
     <script src="/js/vendor/custom.modernizr.js"></script>
+    <script src="/js/vendor/countdown.js"></script>
+
     <script type="text/javascript" src="//use.typekit.net/imm5mhg.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   </head>
@@ -45,6 +50,11 @@
   <div class="row">
     <div class="large-12 columns buy-now">
       <a href="http://nsscotland.eventbrite.co.uk/" class="button">Tickets available from only &pound;199</a>
+      <div id="countdown">
+      <script type="application/javascript">
+      var myCountdown2 = new Countdown({time: 10281600, width:280, height:55, rangeHi:"month", style:"flip"});
+      </script>
+      </div>
     </div>
   </div>
   </div>
@@ -67,21 +77,25 @@
 </div>
 <!-- /FOOTER -->
 
-  <div class="row" >
-    <div id="organisers" class="reveal-modal medium">
-      <div class="organiser first">
-        <img src="/images/2013/speakers/alan_francis.jpg" />
-        <h3>Alan C. Francis</h3>
-        <p>Dave is the MD of Agant (agant.com), one of the UK’s top app studios. Agant created the BAFTA-nominated Malcolm Tucker app – the first app ever to be nominated for a TV BAFTA – as well as the Timeline World War 2, Discworld, Animator's Survival Kit and Arsenal FC apps. Agant are also the people behind UK Train Times, one of the highest-grossing UK apps of all time, which has sold over 300,000 copies in the UK. You can find him at @daveaddey on Twitter.</p>
+<div class="row" >
+  <div id="organisers" class="reveal-modal medium">
+    <h2>NSScotland is organised by:</h2>
+    <div class="organiser first">
+      <img src="/images/2013/speakers/alan_francis.jpg" />
+      <h3>Alan C. Francis</h3>
+      <p>In 20 years, Alan’s done a lot of different things in Software. He’s built control systems for dams 
+          in FORTRAN, the original DVD authoring tools on Windows in C++, Financial Systems on Solaris in Java, 
+          System Monitoring software on Linux in Ruby, and these days merchant tools for iOS in Objective C. 
+          In between he’s been an Agile process consultant for ObjectMentor and ThoughtWorks, and co-organises the Scottish Ruby Conference.</p>
     </div>
-      <div class="organiser">
+    <div class="organiser">
       <img src="/images/2013/speakers/paul_wilson.jpg" />
-        <h3>Paul Wilson</h3>
-        <p>Dave is the MD of Agant (agant.com), one of the UK’s top app studios. Agant created the BAFTA-nominated Malcolm Tucker app – the first app ever to be nominated for a TV BAFTA – as well as the Timeline World War 2, Discworld, Animator's Survival Kit and Arsenal FC apps. Agant are also the people behind UK Train Times, one of the highest-grossing UK apps of all time, which has sold over 300,000 copies in the UK. You can find him at @daveaddey on Twitter.</p>
+      <h3>Paul Wilson</h3>
+      <p>Paul is a coach and coder with over ten years of experience of Agile/XP. He is an active member of the Ruby and Agile communities, and co-organiser of the Scottish Ruby Conference. He has spoken at many conferences and events; these include RubyConf, The Naked Agilist, and guest lectures at Glasgow Caledonian and Edinburgh Napier Universities.</p>
     </div>
-      <a class="close-reveal-modal">&#215;</a>
-    </div>
+    <a class="close-reveal-modal">&#215;</a>
   </div>
+</div>
 <script>
   document.write('<script src=' +
   ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +

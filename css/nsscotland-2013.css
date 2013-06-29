@@ -58,6 +58,10 @@ h2.with-divider span{
 /*--------------------------*/
 /* buy-now
 /*--------------------------*/
+#countdown {
+  margin:1em auto;
+  width:280px;
+}
 .buy-now {
   background:url("/images/2013/divider.png") top center no-repeat;
   padding-top:1.5em;
@@ -428,18 +432,17 @@ div.last-speaker {
 #organisers {
   border-radius:5px;
 }
+#organisers h2 {
+  font-size:1.2em;
+  line-height:1.1em;
+  font-weight:bold;
+}
+
+
 .organiser {
-  width:45%;
-  float:left;
+  clear:both;
+  margin-bottom:2em;
 }
-.organiser.first {
-  margin-right:5%;
+.organiser img {
+  float:left; margin-right:1em;
 }
-.organiser img,
-.organiser h3 {
-  display:block;
-  margin:0 auto;
-  text-align:center;
-
-}
-
