@@ -45,7 +45,7 @@ h2.with-divider span{
   padding:0 0.7em;
   box-shadow:0px 0px 5px 4px #FFFFFF;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   h2.with-divider {
     background:none;
     text-align:left;
@@ -106,7 +106,7 @@ a.button:hover {
   font-weight:300;
   text-align:center;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .strap-text p {
     text-align:left;
     font-size:1.1em;
@@ -144,7 +144,7 @@ a.button:hover {
   margin-top:-5em;
   margin-bottom:10px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
  #homepage img {display:none;}
  #homepage .title {
     position:static;
@@ -209,9 +209,15 @@ div.last-speaker {
 }
 .reveal-modal {
   position:fixed;
-  top:30%!important;
+  top:10%!important;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
+  .reveal-modal {
+    position:fixed;
+    top:2%!important;
+    height:90%;
+    overflow:scroll;
+  }
   .speaker img {
     display:none; 
   }
@@ -222,14 +228,19 @@ div.last-speaker {
   }
   .biography h3,
   .biography h4 {
-    text-align:center;
+    text-align:left;
     font-size:1em;
+    margin-left:4em;
+  }
+  .biography h3 {
+    padding-top:0.5em;
   }
   .biography img {
     width:25%;
-    float:none;
-    display:block;
-    margin:0 auto;
+    float:left;
+  }
+  .biography p {
+    clear:both;
   }
 }
 
@@ -337,7 +348,7 @@ div.last-speaker {
 #primary-navigation li.buy-tickets a:hover {
   background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgb(105,169,39)), color-stop(0.5, rgb(135,189,48)), color-stop(0.5, rgb(150,199,72)), color-stop(1, rgb(169,212,95))); background-image: -moz-linear-gradient(center bottom, rgb(105,169,39) 0%, rgb(135,189,48) 50%, rgb(150,199,72) 50%, rgb(169,212,95) 100%); -webkit-background-clip: padding-box; 
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   #primary-navigation h2 {
     color:#999999;
     position:static;
@@ -373,7 +384,7 @@ div.last-speaker {
   float:left;
   margin:1em 1em 1em 0;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .tutorials-detail #ios-tutorial {
     padding-right:1em;
   }
@@ -466,7 +477,7 @@ div.last-speaker {
 .organiser img {
   float:left; margin-right:1em;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .organiser p,
   .organiser h3,
   .organiser h4 {
