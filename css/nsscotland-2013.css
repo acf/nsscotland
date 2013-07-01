@@ -58,6 +58,17 @@ h2.with-divider span{
 /*--------------------------*/
 /* buy-now
 /*--------------------------*/
+#sponsors {
+  margin:1em auto;
+  background:url("/images/2013/divider.png") top center no-repeat;
+  padding-top:1.5em;
+  text-align:center;
+}
+#sponsors h2{
+  font-size:1em;
+  font-weight:800;
+  font-style:bold;
+}
 #countdown {
   margin:1em auto;
   width:280px;
