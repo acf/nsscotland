@@ -50,6 +50,7 @@
   <div class="row">
     <div class="large-12 columns buy-now">
       <a href="http://nsscotland.eventbrite.co.uk/" class="button">Tickets available from only &pound;199</a>
+
       <!--
       <div id="countdown">
       <script type="application/javascript">
@@ -59,7 +60,16 @@
       -->
     </div>
   </div>
+  <div class="row">
+    <div class="large-12 columns" id="sponsors">
+      <h2>Proudly sponsored by:</h2>
+      <p> <a href="/sponsors.html#bromium"><img src="/images/2013/bromium.png" /></a></p>
+      <!--
+      <p><a href="/sponsors.html">Interested in sponsoring NSScotland?</a></p>
+      -->
+    </div>
   </div>
+</div>
 
 <!-- FOOTER -->
 <div id="footer">
@@ -115,6 +125,21 @@
   <script src="js/foundation.min.js"></script>
 <script>
   $(document).foundation();
+</script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-42123362-1']);
+  _gaq.push(['_setDomainName', 'nsscotland.com']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+   })();
 </script>
 
   </body>
