@@ -65,8 +65,33 @@
         <li>Speeding up the initial Ruby on Rails learning curve by spending a weekend in a coding bootcamp</li>
       </ul>
       <h4>Preparation</h4>
-      <p>T B A</p>
+<p>In preparation for the course we suggest you prepare your Mac laptop (with 10.8 Mountain Lion or better installed) with the required development tools before coming to the course.</p> 
 
+<p><strong>Xcode</strong></p>
+<p>Please install the latest version of Xcode.  This can take a while to download and install so it’s probably the most critical piece to prepare in advance.  To update or install go to the App store and search for Xcode.  It should be free.  A new version of Xcode will undoubtedly be available before Oct, but if you get it now, you can simply upgrade before coming to the workshop.</p>
+
+<p><strong>XCode Command line tools</strong></p>
+<p>Open up Xcode, go to preferences from the Xcode menu, and select Downloads.  Install the command line tools. (If/when you upgrade Xcode, you'll probably need to do this step over)</p>
+
+<p><strong>Ruby and Rails (with RVM)</strong></p>
+<p>Open up a command prompt and type the following command:</p>
+
+<pre>curl -L get.rvm.io | bash -s stable --ruby --rails</pre>
+<p>&nbsp;</p>
+<p>This will load up the latest stable versions of ruby and rails (which should be some patch release of Ruby 2.0 and Rails 4.0).  Given that developers can, and do, install lots of miscellaneous software tools, it's possible you may run into an error installing RVM.  If so, please refer to the RVM installations instructions found here: <a href="https://rvm.io/rvm/install">https://rvm.io/rvm/install</a></p>
+
+<p><strong>Postgres</strong></p>
+<p>Since we will be setting up our application on Heroku, we will develop and deploy using Postgresql as a backend.  The easiest way to get postgres working on a mac is to install the Heroku postgres app available here:  <a href="http://postgresapp.com">http://postgresapp.com</a>. Don’t worry about getting rails working with postgres--we will cover that during the course.</p>
+
+<p>It is important to install the Postgres.app in your Applications directory.  Please do NOT run it from the installation DMG, as you will experience weird, hard to diagnose errors ;-)</p> 
+
+<p>If you already have another version of Postgresql installed, you should just go with what you have.</p>  
+
+<p><strong>Heroku</strong></p>
+
+<p>You also want to sign up for a free Heroku instance at their main web site - <a href="https://id.heroku.com/signup">https://id.heroku.com/signup</a> and install the Heroku toolbelt from <a href="https://toolbelt.heroku.com">https://toolbelt.heroku.com</a>.  This will get you Git as well, which we will need to deploy to Heroku.</p>
+
+<p>If you have any questions please feel free to ask.  You can email us at <a href="mailto:lori@wndx.com">lori@wndx.com</a> and <a href="mailto:tim@sbrew.com">tim@sbrew.com</a>.</p>
       <div id="lori-olson" class="biography reveal-modal medium">
         <img src="/images/2013/speakers/lori_olson.jpg"  />
         <h3>Lori Olson</h3>
