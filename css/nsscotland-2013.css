@@ -175,6 +175,11 @@ a.button:hover {
 /*--------------------------*/
 /* speaker
 /*--------------------------*/
+#mini-speakers h3{
+  font-size:1em;
+  text-align:center;
+}
+
 .speaker {
   background:url("/images/2013/divider.png") bottom center no-repeat;
   padding-bottom:20px;
