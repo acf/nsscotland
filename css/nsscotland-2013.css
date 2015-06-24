@@ -1,5 +1,5 @@
 html body {
-  font-family: "proxima-nova";
+  font-family: 'Lucida Grande', Helvetica, Verdana, sans-serif;
   color:242424;
   background:#EFEFEF;
 }
@@ -19,7 +19,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "proxima-nova";
+  font-family: 'Lucida Grande', Helvetica, Verdana, sans-serif;
   font-style: normal;
   font-weight: 300;
 }
