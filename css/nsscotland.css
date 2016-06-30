@@ -37,7 +37,7 @@ h4 {
 /* header with divider
 /*--------------------------*/
 h2.with-divider {
-  background:url("/images/2013/divider.png") 0.5em center no-repeat;
+  background:url("/images/site/divider.png") 0.5em center no-repeat;
   text-align:center;
 }
 h2.with-divider span{
@@ -60,7 +60,7 @@ h2.with-divider span{
 /*--------------------------*/
 #sponsors {
   margin:1em auto;
-  background:url("/images/2013/divider.png") top center no-repeat;
+  background:url("/images/site/divider.png") top center no-repeat;
   padding-top:1.5em;
   text-align:center;
 }
@@ -74,7 +74,7 @@ h2.with-divider span{
   width:280px;
 }
 .buy-now {
-  background:url("/images/2013/divider.png") top center no-repeat;
+  background:url("/images/site/divider.png") top center no-repeat;
   padding-top:1.5em;
   text-align:center;
 }
@@ -180,7 +180,7 @@ a.button:hover {
   text-align:center;
 }
 .speaker {
-  background:url("/images/2013/divider.png") bottom center no-repeat;
+  background:url("/images/site/divider.png") bottom center no-repeat;
   padding-bottom:20px;
   margin-bottom:30px;
 }
@@ -265,7 +265,7 @@ div.last-speaker {
 #primary-navigation  {
 }
 #primary-navigation h1 {
-  background:url("/images/2013/nsscotland-logo.png") top left no-repeat;
+  background:url("/images/site/nsscotland-logo.png") top left no-repeat;
   height: 124px;
   width: 136px;
   margin:0 auto;
@@ -460,7 +460,7 @@ div.last-speaker {
   padding:2em 0;
 }
 #designed-by-apple {
-  background:url("/images/2013/grey-nsscotland-logo.png") top left no-repeat;
+  background:url("/images/site/grey-nsscotland-logo.png") top left no-repeat;
 }
 #footer p {
   font-family: 'Lucida Grande', Helvetica, Verdana, sans-serif;
